@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ninja</title>        
+    <style>
+    body{          
+        max-width: 1000px;
+    }
+    button{
+        font-size: 30px;
+        color: cornsilk;
+        width: 300px;
+        padding: 0;
+        margin-left: 450px;
+        background-color: brown;
+        border-bottom-right-radius: 40%;
+        display: inline-block;
+    }
+    div{
+        margin-left: 300px;
+    }     
+    img{
+        border: 5px double firebrick;
+        width: 120px;
+        height: 100px;
+        margin: 5px;
+    }          
+    </style>
+</head>
+<body>
+    <div>
+        <img src="1.jpg">
+        <img src="2.jpg">
+        <img src="3.jpg">
+        <img src="4.jpg">
+        <img src="5.jpg">
+        <img src="6.jpg">
+        <img src="7.jpg">
+        <img src="8.png">
+        
+    </div>    
+    <button>Restaurar</button>       
+    
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+<script>
+    $(document).ready(function() {
+        $('img').on('click',function(){
+            $(this).fadeOut();
+        });
+
+        $('button').on('click',function(){
+            $('img').show();
+        })   
+    })   
+</script>
+
+
+</html>
